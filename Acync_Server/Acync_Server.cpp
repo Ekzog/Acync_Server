@@ -150,8 +150,8 @@ private:
             auto jsonValue = boost::json::parse(myJsonEncodedData, errorCode);
             std::ostringstream osstr;
             osstr << jsonValue;
-            std::string zapros = osstr.str();
-            do_write(zapros + "\n");
+            std::string request = osstr.str();
+            do_write(request + "\n");
         }
         //else std::cout << err << std::endl;
         stop();
